@@ -1,0 +1,105 @@
+object Form1: TForm1
+  Left = 25
+  Top = 168
+  Caption = 'Form1'
+  ClientHeight = 220
+  ClientWidth = 314
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 0
+    Top = 0
+    Width = 105
+    Height = 105
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 240
+    Top = 48
+    Width = 33
+    Height = 33
+    Glyph.Data = {
+      76020000424D7602000000000000760000002800000020000000200000000100
+      0400000000000002000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00000000000000
+      000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFF
+      FFF0FFFFFFFFFFFFFFF00FFFFFFFFFFFFF0000FFFFFFFFFFFFF00FFFFFFFFFF0
+      00F0FF000FFFFFFFFFF00FFFFFFFFF0FFFF0FFFFF0FFFFFFFFF00FFFFFFFF0FF
+      FFF0FFFFFF0FFFFFFFF00FFFFFFF0FFFFFF0FFFFFFF0FFFFFFF00FFFFFF0FFFF
+      FFF00FFFFFFF0FFFFFF00FFFFFF0FFFFF000F00FFFFF0FFFFFF00FFFFFF0FFFF
+      0FF0FFF0FFFF0FFFFFF00FFFFF0FFFFF0FF0FFF0FFFFF0FFFFF00FFFFF0FFFF0
+      FFF0FFFF0FFFF0FFFFF00FFFF0000000000000000000000FFFF00FFFFF0FFFFF
+      0FF0FFF0FFFFF0FFFFF00FFFFFF0FFFF0FF0FFF0FFFF0FFFFFF00FFFFFF0FFFF
+      F000F00FFFFF0FFFFFF00FFFFFF0FFFFFFF00FFFFFFF0FFFFFF00FFFFFFF0FFF
+      FFF0FFFFFFF0FFFFFFF00FFFFFFFF0FFFFF0FFFFFF0FFFFFFFF00FFFFFFFFF0F
+      FFF0FFFFF0FFFFFFFFF00FFFFFFFFFF000F0FF000FFFFFFFFFF00FFFFFFFFFFF
+      FF0000FFFFFFFFFFFFF00FFFFFFFFFFFFFF0FFFFFFFFFFFFFFF00FFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000
+      00000000000000000000077770CCCCCCCCCCCCCCCCCCCC077770070070CCCCCC
+      CCCCCCCCCCCCCC070070070070CCCCCCCCCCCCCCCCCCCC070070077770CCCCCC
+      CCCCCCCCCCCCCC07777000000000000000000000000000000000}
+    OnMouseDown = SpeedButton1MouseDown
+    OnMouseMove = SpeedButton1MouseMove
+  end
+  object Memo1: TMemo
+    Left = 0
+    Top = 144
+    Width = 313
+    Height = 73
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 0
+  end
+  object bitbtnCapture: TBitBtn
+    Left = 152
+    Top = 40
+    Width = 49
+    Height = 25
+    Caption = 'Capture'
+    TabOrder = 1
+    OnClick = bitbtnCaptureClick
+  end
+  object btnLaunch: TButton
+    Left = 231
+    Top = 109
+    Width = 75
+    Height = 25
+    Caption = 'Launch...'
+    TabOrder = 2
+    OnClick = btnLaunchClick
+  end
+  object MainMenu1: TMainMenu
+    Left = 112
+    Top = 40
+    object Screen1: TMenuItem
+      Caption = 'Screen'
+      object estDLLCapture1: TMenuItem
+        Caption = 'DLL Capture'
+        OnClick = TestDLLCapture1Click
+      end
+      object DLLCaptureSpecificWindow1: TMenuItem
+        Caption = 'DLL Capture Specific Window'
+      end
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 232
+    Top = 120
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Executable files|*.exe'
+    Left = 232
+    Top = 80
+  end
+end

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{9458E427-3BB7-4AB8-94F6-6F7BCF7B3805}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  
+    
+    <Projects>
+      <Projects Name="PrintHelperTest.exe">PrintHelperTest.bdsproj</Projects>
+      <Projects Name="PrintHelperDLL.dll">PrintHelperDLL.bdsproj</Projects>
+      <Projects Name="Targets">PrintHelperTest.exe PrintHelperDLL.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>
